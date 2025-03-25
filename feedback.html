@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Feedback</title>
+		<style>
+			body {
+				max-width: 800px;
+				margin: 20px auto;
+				text-align: center;
+				font-family: "Courier New", Courier, monospace;
+				background-color: antiquewhite;
+			}
+
+			.nav,
+			main,
+			footer {
+				border-radius: 5px;
+				box-shadow: 8px 8px;
+			}
+
+			main {
+				border-radius: 5px 5px 0 0;
+				text-align: center;
+			}
+
+			footer {
+				padding: 10px;
+				background-color: burlywood;
+				border-radius: 0 0 5px 5px;
+				border: 1px solid black;
+				border-top: none;
+			}
+
+			footer section {
+				width: auto;
+				align-items: center;
+				padding: 10px;
+			}
+
+			.nav {
+				background-color: #bfa185;
+				padding: 10px;
+				border-radius: 5px 5px 0 0;
+				border: 1px solid black;
+				border-bottom: none;
+				width: auto;
+				align-items: center;
+			}
+
+			.container {
+				width: auto;
+				padding: 20px;
+				border: 1px solid black;
+				background-color: azure;
+				box-shadow: 8px 8px;
+				text-align: left;
+			}
+
+			a {
+				color: black;
+			}
+
+			.hr {
+				border-bottom: 3px black solid;
+			}
+
+			#name {
+				width: 200px;
+				height: 20px;
+			}
+
+			#textarea {
+				resize: none;
+				border-radius: 10px;
+				width: 300px;
+			}
+
+			.text {
+				border-radius: 5px;
+				border: 1px black solid;
+			}
+
+			.rad {
+				height: 20px;
+				width: 20px;
+				cursor: pointer;
+			}
+
+			#btn {
+				background-color: #6b4f36;
+				border-radius: 3px;
+				border: 1px solid #2B1D14;
+				box-shadow: 3px 3px #2B1D14;
+				margin-top: 8px;
+				font-family: "Courier New", Courier, monospace;
+				font-size: 16px;
+				padding: 10px 25px;
+				color: #f5e1c8;
+			}
+
+			#btn:hover {
+				box-shadow: 1px 1px 0px #2B1D14; 
+				transform: translate(2px, 2px);
+                color: #dddddd;
+                cursor: pointer;
+			}
+
+            header {
+                display: inline-block;
+            }
+
+			.profile {
+				position: absolute;
+				top: 40px;
+				left: 40px;
+				background-color: #bfa185;
+				padding: 30px;
+				border-radius: 15px;
+				box-shadow: 6px 6px black;
+				border: 1px solid black;
+			}
+
+			.profile a img {
+				width: 70px;
+				height: auto;
+				border-radius: 50%;
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav class="profile">
+				<a href="index.html"><img src="tayog.png" alt="tayog" /></a>
+			</nav>
+		</header>
+
+		<main>
+			<div class="nav">
+				<h1>Feedback</h1>
+			</div>
+			<div class="container">
+				<div class="hr">
+					<h2><b>We Value Your Feedback</b></h2>
+				</div>
+
+				<div class="content">
+					<p>Please let us know what you think about my website.</p>
+					<form action="#">
+						<p>
+							Your Name:<input type="text" name="text" id="name" class="text" />
+						</p>
+						<p>Rate My Website:</p>
+						<input type="radio" name="radio" id="1" class="rad" />1
+						<input type="radio" name="radio" id="2" class="rad" />2
+						<input type="radio" name="radio" id="3" class="rad" />3
+						<input type="radio" name="radio" id="4" class="rad" />4
+						<input type="radio" name="radio" id="5" class="rad" />5
+
+						<br />
+						Comments: <br /><textarea
+							name=""
+							id="textarea"
+							cols="30"
+							rows="10"
+							class="text"
+						></textarea>
+
+						<br /><button type="submit" id="btn">Submit Feedback</button>
+					</form>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<section>
+				&copy; 2025 Bantayog Maharaj E. Basallo. All Rights Reserved.
+			</section>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bantayog Maharaj E. Basallo - Portfolio</title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+				font-family: "Courier New", Courier, monospace;
+			}
+
+			html {
+				scroll-behavior: smooth;
+			}
+
+			main {
+				background-color: #faebd7;
+			}
+
+			nav {
+				padding: 25px 25px 30px;
+				text-align: right;
+				display: inline-block;
+				width: 100%;
+				background-color: #bfa185;
+				border-bottom: 1px solid #dcc3a5;
+			}
+
+			nav a {
+				padding: 10px;
+				margin: 0 10px;
+				text-decoration: none;
+				font-size: 1.1em;
+				color: #e7cfb1;
+				box-shadow: 4px 4px black;
+				border: 1px solid black;
+				background-color: #6b4f36;
+				display: inline-block;
+			}
+
+			nav a:hover {
+				box-shadow: 1px 1px black;
+				transform: translate(2px, 2px);
+				color: #dddddd;
+			}
+
+			.hero-section {
+				background-image: url(protruding-squares.svg);
+				max-width: 100%;
+				height: 87vh;
+				text-align: center;
+				padding: 30px;
+				border-bottom: 1px solid #6b4f36;
+			}
+
+			.hero-section img {
+				height: 250px;
+				border: 1px solid black;
+				box-shadow: 8px 8px black;
+			}
+
+			.hero-section h1 {
+				font-size: 60px;
+			}
+			.hero-section h3 {
+				font-size: 25px;
+			}
+
+			.hero-section h1,
+			h3,
+			div,
+			p {
+				margin: 20px auto;
+			}
+
+			.links ul li a {
+				display: inline-block;
+				min-width: 160px;
+				padding: 15px;
+				background-color: #bfa185;
+				color: #744021;
+				text-decoration: none;
+				box-shadow: 4px 4px black;
+				border: 1px solid black;
+			}
+
+			.links ul li {
+				margin: 0 0 10px;
+				list-style-type: none;
+			}
+
+			.links ul li a:hover {
+				transform: translate(2px, 2px);
+				box-shadow: 1px 1px black;
+				color: #dddddd;
+			}
+
+			footer {
+				width: 100%;
+				background-color: burlywood;
+				text-align: center;
+				padding: 15px;
+			}
+
+			.container {
+				max-width: 1100px;
+				margin: 0 auto;
+				text-align: center;
+				background-color: #faebd7;
+				padding: 20px;
+			}
+
+			.container > div {
+				margin: 50px 0;
+			}
+
+			.container div h2 {
+				color: #4e3927;
+			}
+
+			.checkmark {
+				color: #4e3927;
+			}
+
+			#skills p span {
+				margin: 0 -5px 0 15px;
+			}
+
+			#skills p {
+				text-align: left;
+				border-bottom: 1px solid #6b4f36;
+				padding: 0 0 5px;
+			}
+
+			.text ul li {
+				list-style-type: none;
+			}
+
+			.text h3,
+			.text p {
+				text-align: left;
+				margin: 5px 15px;
+			}
+
+			#experience h2 {
+				margin: 25px;
+			}
+
+			.text {
+				border-bottom: 1px solid #6b4f36;
+				margin: 0;
+				padding: 0 0 10px;
+			}
+
+			.proj h3,
+			.proj p {
+				display: inline-block;
+			}
+
+			#projects .proj,
+			.proj h3,
+			.proj p {
+				margin: 0;
+				padding: 0;
+			}
+
+			#projects h2 {
+				margin: 20px;
+			}
+
+			.proj {
+				text-align: left;
+				border-bottom: 1px solid #6b4f36;
+			}
+
+			.proj h3 {
+				margin-left: 15px;
+				padding: 15px 0;
+			}
+
+			.cont p {
+				margin: 5px 5px 5px 15px;
+				text-align: left;
+			}
+
+			.email-btn {
+				display: inline-block;
+				min-width: 160px;
+				padding: 15px;
+				background-color: #bfa185;
+				color: #744021;
+				box-shadow: 4px 4px black;
+				border: 1px solid black;
+			}
+
+			.email-btn:hover {
+				transform: translate(2px, 2px);
+				box-shadow: 1px 1px black;
+				color: #dddddd;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="#skills">Skills</a>
+				<a href="#experience">Experience</a>
+				<a href="#projects">Projects</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		</header>
+
+		<main>
+			<section class="hero-section">
+				<img src="tayog.png" alt="tayog" />
+				<h1>Welcome to My Profile</h1>
+				<h3>Web Developer | Hacker | Critical Thinker</h3>
+				<div class="links">
+					<ul>
+						<li>
+							<a href="resume.html">View Resume</a>
+						</li>
+						<li>
+							<a href="feedback.html">Give Feedback</a>
+						</li>
+					</ul>
+				</div>
+				<p>
+					<i
+						>"Life is a long path to a goal. Drop your heavy luggage <br />and
+						enjoy walking with your hands empty." <br />
+						- <b>Souji Tendou, Kamen Rider Kabuto</b></i
+					>
+				</p>
+			</section>
+
+			<section class="container">
+				<div id="skills">
+					<h2>Skills</h2>
+					<p>
+						<span class="checkmark">&#10004;</span>
+						Web Development(HTML, CSS, JavaScript)
+					</p>
+					<p>
+						<span class="checkmark">&#10004;</span>
+						Back-End(Java)
+					</p>
+					<p>
+						<span class="checkmark">&#10004;</span>
+						Critical Thinking
+					</p>
+					<p>
+						<span class="checkmark">&#10004;</span>
+						Hacking
+					</p>
+				</div>
+				<div id="experience">
+					<h2>Experience</h2>
+
+					<div class="text">
+						<h3>
+							Instructor I - College of Engineering and Information Technology
+						</h3>
+						<p><i>2030 - Future</i></p>
+						<p>To teach students about life and hacking</p>
+						<p>Especializing in Hacking</p>
+					</div>
+
+					<div class="text">
+						<h3>Professional Tambay</h3>
+						<p><i>2025 - 2030</i></p>
+						<p>Investing in cryptocurrency and gambling</p>
+						<p>Hacking G-Cash with mod apk</p>
+					</div>
+				</div>
+
+				<div id="projects">
+					<h2>Projects</h2>
+					<div class="proj">
+						<h3>Portfolio(Myself)</h3>
+						<p>- (2025)</p>
+					</div>
+					<div class="proj">
+						<h3>Calculator(HTML, CSS, JavaScript)</h3>
+						<p>- (2025)</p>
+					</div>
+				</div>
+				<div id="contact">
+					<h2>Contact</h2>
+					<div class="cont">
+						<p>Email: basallo.tayog@gmail.com</p>
+						<p>Phone: 09660990213</p>
+						<p>Location: General Trias City, Philippines</p>
+					</div>
+				</div>
+
+				<button class="email-btn">Email Me</button>
+			</section>
+		</main>
+
+		<footer>
+			&copy; 2025 Bantayog Maharaj E. Basallo. All Rights Reserved.
+		</footer>
+	</body>
+</html>
