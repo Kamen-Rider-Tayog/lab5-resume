@@ -21,12 +21,18 @@
 			}
 
 			nav {
-				padding: 25px 25px 30px;
+				padding: 5px 25px 10px;
 				text-align: right;
 				display: inline-block;
 				width: 100%;
 				background-color: #bfa185;
 				border-bottom: 1px solid #dcc3a5;
+			}
+
+			.menu-icon {
+				font-size: 30px;
+				cursor: pointer;
+				display: none;
 			}
 
 			nav a {
@@ -174,23 +180,28 @@
 			.proj {
 				text-align: left;
 				border-bottom: 1px solid #6b4f36;
-				transition: 0.3s;
 			}
 
 			.proj h3 {
 				margin-left: 15px;
 				padding: 15px 0;
 			}
-
-			.proj a {
+			#projects a {
 				text-decoration: none;
-			    	color: inherit;
-			    	display: block;
 			}
 
-			.proj a:hover {
-				pointer: cursor;
+			a .proj {
+				text-decoration: none;
+				color: #000000;
+			}
+
+			a .proj:hover {
+				cursor: pointer;
 				color: #4e3927;
+			}
+
+			.proj p {
+				text-decoration: none;
 			}
 
 			.cont p {
@@ -214,15 +225,122 @@
 				color: #dddddd;
 				cursor: pointer;
 			}
+
+			@media (max-width: 768px) {
+				body {
+					font-size: 16px;
+				}
+
+				.menu-icon {
+					display: block;
+					text-align: left;
+					margin: 0;
+					color: #6b4f36;
+				}
+
+				.nav-links {
+					display: none;
+					flex-direction: column;
+					width: 100%;
+					text-align: center;
+					background-color: #bfa185;
+					position: absolute;
+					top: 50px;
+					left: 0;
+					right: 0;
+					padding: 20px 0;
+					margin: 0;
+					z-index: 10;
+				}
+
+				.nav-links a {
+					display: block;
+					padding: 15px;
+					border-bottom: 1px solid black;
+				}
+
+				.nav-links.show {
+					display: flex;
+				}
+
+				nav {
+					height: 50px;
+					position: relative;
+				}
+
+				nav a {
+					display: inline-block;
+					margin: 5px auto;
+					width: 40%;
+					text-align: center;
+				}
+
+				.hero-section {
+					height: auto;
+					padding: 20px;
+				}
+
+				.hero-section img {
+					height: 150px;
+				}
+
+				.hero-section h1 {
+					font-size: 40px;
+				}
+
+				.hero-section h3 {
+					font-size: 20px;
+				}
+
+				.links ul li a,
+				.email-btn {
+					display: block;
+					width: 40%;
+					text-align: center;
+					padding: 12px;
+					font-size: 1em;
+					margin: 10px auto;
+				}
+
+				.container {
+					padding: 10px;
+					width: 95%;
+				}
+
+				.container div {
+					margin: 20px 0;
+				}
+
+				#skills p,
+				.text p,
+				.cont p {
+					font-size: 0.8em;
+					padding: 8px;
+					text-align: left;
+				}
+
+				.proj {
+					text-align: left;
+					font-size: 0.8em;
+				}
+
+				footer {
+					font-size: 12px;
+					padding: 10px;
+				}
+			}
 		</style>
 	</head>
 	<body>
 		<header>
 			<nav>
-				<a href="#skills">Skills</a>
-				<a href="#experience">Experience</a>
-				<a href="#projects">Projects</a>
-				<a href="#contact">Contact</a>
+				<div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+				<div class="nav-links">
+					<a href="#skills">Skills</a>
+					<a href="#experience">Experience</a>
+					<a href="#projects">Projects</a>
+					<a href="#contact">Contact</a>
+				</div>
 			</nav>
 		</header>
 
@@ -296,12 +414,15 @@
 						<h3>Portfolio(Myself)</h3>
 						<p>- (2025)</p>
 					</div>
-					<a href="https://kamen-rider-tayog.github.io/calculator-ni-tayog/" 
-						target="_blank" rel="noopener noreferrer">
-					    <div class="proj">
-					        <h3>Calculator (HTML, CSS, JavaScript)</h3>
-					        <p>- (2025)</p>
-					    </div>
+
+					<a
+						href="https://kamen-rider-tayog.github.io/calculator-ni-tayog/"
+						target="_blank"
+						rel="noopener noreferrer"
+						><div class="proj">
+							<h3>Calculator(HTML, CSS, JavaScript)</h3>
+							<p>- (2025)</p>
+						</div>
 					</a>
 				</div>
 				<div id="contact">
@@ -320,5 +441,12 @@
 		<footer>
 			&copy; 2025 Bantayog Maharaj E. Basallo. All Rights Reserved.
 		</footer>
+
+		<script>
+			function toggleMenu() {
+				const navLinks = document.querySelector(".nav-links");
+				navLinks.classList.toggle("show");
+			}
+		</script>
 	</body>
 </html>
