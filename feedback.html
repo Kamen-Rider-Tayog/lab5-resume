@@ -91,8 +91,8 @@
 			#btn {
 				background-color: #6b4f36;
 				border-radius: 3px;
-				border: 1px solid #2B1D14;
-				box-shadow: 3px 3px #2B1D14;
+				border: 1px solid #2b1d14;
+				box-shadow: 3px 3px #2b1d14;
 				margin-top: 8px;
 				font-family: "Courier New", Courier, monospace;
 				font-size: 16px;
@@ -101,15 +101,15 @@
 			}
 
 			#btn:hover {
-				box-shadow: 1px 1px 0px #2B1D14; 
+				box-shadow: 1px 1px 0px #2b1d14;
 				transform: translate(2px, 2px);
-                color: #dddddd;
-                cursor: pointer;
+				color: #dddddd;
+				cursor: pointer;
 			}
 
-            header {
-                display: inline-block;
-            }
+			header {
+				display: inline-block;
+			}
 
 			.profile {
 				position: absolute;
@@ -128,12 +128,122 @@
 				border-radius: 50%;
 				border: 1px solid black;
 			}
+
+			.back-button {
+				display: none;
+			}
+
+			@media (max-width: 768px) {
+				body {
+					margin: 10px auto 20px;
+					padding: 0;
+					max-width: 300px;
+					font-size: 0.7em;
+					text-align: left;
+				}
+
+				main {
+					margin: 5px 0 0;
+					background-color: antiquewhite;
+					text-align: center;
+					border-radius: 10px 10px 0 0;
+					box-shadow: 4px 4px black;
+				}
+
+				.nav,
+				footer {
+					box-shadow: 4px 4px;
+				}
+
+				.container {
+					padding: 20px;
+					margin: auto;
+					background-color: azure;
+					border: 1px solid black;
+					box-shadow: 4px 4px;
+				}
+
+				.profile {
+					margin: 0;
+					padding: 0;
+					box-shadow: none;
+					border: none;
+					position: inherit;
+					display: inline-block;
+					
+				}
+
+				.profile a img {
+					display: none;
+				}
+
+				.back-button {
+					display: block;
+					background: #bfa185;
+					border: 1px solid black;
+					box-shadow: 2px 2px black;
+					font-size: 10px;
+					font-weight: bold;
+					cursor: pointer;
+					padding: 10px;
+					color: black;
+					border-radius: 5px;
+				}
+
+				.back-button:hover {
+					color: #dddddd;
+					box-shadow: 1px 1px;
+					transform: translate(1px, 1px);
+				}
+
+				.container img {
+					width: 100px;
+				}
+
+				.text {
+					text-align: left;
+					margin-left: 10px;
+				}
+
+				footer {
+					font-size: 1em;
+					text-align: center;
+				}
+
+				.text ul {
+					padding-left: 10px;
+				}
+
+				#name {
+					width: 80px;
+					height: 10px;
+					margin-left: 5px;
+				}
+
+				#textarea {
+					width: 150px;
+					height: 50px;
+					margin: 5px 0 0 5px;
+				}
+
+				.rad {
+					width: 10px;
+					height: 10px;
+				}
+
+				#btn {
+					font-size: 0.7em;
+					padding: 5px 10px;
+					margin: 5px 0 0 5px;
+				}
+			}
 		</style>
 	</head>
 	<body>
 		<header>
 			<nav class="profile">
 				<a href="index.html"><img src="tayog.png" alt="tayog" /></a>
+				<button class="back-button" onclick="goBack()">&#8592; Go Back</button>
 			</nav>
 		</header>
 
@@ -179,5 +289,11 @@
 				&copy; 2025 Bantayog Maharaj E. Basallo. All Rights Reserved.
 			</section>
 		</footer>
+
+		<script>
+			function goBack() {
+				window.history.back();
+			}
+		</script>
 	</body>
 </html>
